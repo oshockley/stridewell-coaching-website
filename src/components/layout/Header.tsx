@@ -40,7 +40,7 @@ export function Header() {
 
   return (
     <header
-      className={`on-dark sticky top-0 z-40 bg-navy/95 backdrop-blur transition-shadow duration-300 ${scrolled || open ? 'shadow-[0_1px_0_rgb(255_255_255/0.08)]' : ''}`}
+      className={`on-dark sticky top-0 z-40 bg-navy transition-shadow duration-300 ${scrolled || open ? 'shadow-[0_1px_0_rgb(255_255_255/0.08)]' : ''}`}
     >
       <div className="container-site flex h-16 items-center justify-between gap-4 lg:h-18">
         <a href="#top" className="rounded-lg" aria-label="Stridewell Coaching, back to top">
@@ -63,9 +63,9 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ButtonLink href="#consult" className="hidden sm:inline-flex">
-            Free Consult
-          </ButtonLink>
+          <div className="hidden sm:block">
+            <ButtonLink href="#consult">Free Consult</ButtonLink>
+          </div>
           <button
             ref={toggleRef}
             type="button"

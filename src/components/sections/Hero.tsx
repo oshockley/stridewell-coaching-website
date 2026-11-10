@@ -34,8 +34,7 @@ export function Hero({ onStartQuiz }: HeroProps) {
             id="hero-title"
             className="text-[2.6rem] leading-[1.04] font-bold sm:text-6xl lg:text-[4.25rem]"
           >
-            Strength You Can Feel.{' '}
-            <span className="text-lime">Results You Can Keep.</span>
+            Strength You Can Feel. <span className="block text-lime">Results You Can Keep.</span>
           </m.h1>
 
           <m.p {...fadeUp(0.12)} className="mt-6 max-w-xl text-lg leading-relaxed text-on-navy sm:text-xl">
@@ -68,10 +67,11 @@ export function Hero({ onStartQuiz }: HeroProps) {
         </div>
 
         <m.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
+          // Scale only (no fade) so the hero image paints immediately for LCP.
+          initial={{ scale: 0.96 }}
+          animate={{ scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto w-full max-w-md lg:max-w-none"
+          className="relative mx-auto w-[86%] max-w-md sm:w-full lg:max-w-none"
         >
           <div className="absolute -inset-3 rotate-3 rounded-4xl bg-lime/90" aria-hidden="true" />
           <img

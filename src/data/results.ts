@@ -25,7 +25,8 @@ export const clientResults: ClientResult[] = [
     name: 'Alyssa',
     photoId: photos.alyssa,
     photoAlt: 'Alyssa training on a lat pulldown machine',
-    outcome: 'First unassisted pull-up',
+    // Non-breaking hyphen keeps "pull-up" on one line.
+    outcome: 'First unassisted pull‑up',
     timeframe: '8 weeks',
     detail: 'Progressed from band-assisted reps to a full bodyweight pull-up with a weekly pulling block.',
     programId: 'elite',
@@ -61,7 +62,7 @@ export const clientResults: ClientResult[] = [
     name: 'Chris',
     photoId: photos.chris,
     photoAlt: 'Chris doing a cable fly exercise',
-    outcome: 'Gained 8 lb of bodyweight, waist unchanged',
+    outcome: 'Up 8 lb, same waist size',
     timeframe: '16 weeks',
     detail: 'A four-day split and a steady calorie surplus after years of trying to bulk on his own.',
     programId: 'foundation',

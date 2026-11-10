@@ -22,7 +22,7 @@ export function Faq() {
                 Something else on your mind? Email{' '}
                 <a
                   href={`mailto:${site.contact.email}`}
-                  className="font-semibold break-all text-ink underline underline-offset-4"
+                  className="font-semibold wrap-anywhere text-ink underline underline-offset-4"
                 >
                   {site.contact.email}
                 </a>{' '}

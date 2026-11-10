@@ -27,7 +27,7 @@ export function Testimonials() {
           }
         />
 
-        <ul className="mt-14 grid gap-6 md:grid-cols-2">
+        <ul className="mx-auto mt-14 grid max-w-2xl gap-6 lg:max-w-none lg:grid-cols-2">
           {testimonials.map((t, i) => (
             <li key={t.name}>
               <Reveal delay={(i % 2) * 0.08} className="h-full">

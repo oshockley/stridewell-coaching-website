@@ -67,7 +67,7 @@ export function Footer() {
                 <Phone aria-hidden="true" className="size-5 shrink-0 text-lime" />
                 {contact.phoneDisplay}
               </a>
-              <a href={`mailto:${contact.email}`} className="flex items-center gap-3 break-all hover:text-white">
+              <a href={`mailto:${contact.email}`} className="flex items-center gap-3 wrap-anywhere hover:text-white">
                 <Mail aria-hidden="true" className="size-5 shrink-0 text-lime" />
                 {contact.email}
               </a>

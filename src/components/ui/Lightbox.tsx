@@ -74,7 +74,7 @@ export function Lightbox({ items, index, onIndexChange, onClose }: LightboxProps
               alt={item.alt}
               className="max-h-[calc(100dvh-10rem)] w-auto max-w-full rounded-2xl object-contain shadow-lift"
             />
-            <figcaption className="mt-4 text-center font-display text-lg font-semibold text-white">
+            <figcaption aria-live="polite" className="mt-4 text-center font-display text-lg font-semibold text-white">
               {item.caption}
               <span className="mt-1 block font-sans text-sm font-normal text-on-navy">
                 Photo {index! + 1} of {items.length}

@@ -17,6 +17,7 @@ export function unsplash(id: string, width: number, height?: number) {
   const params = new URLSearchParams({
     auto: 'format',
     fit: 'crop',
+    crop: 'faces,center',
     w: String(width),
     q: '70',
   })

@@ -38,10 +38,10 @@ export function HowItWorks() {
           title="From first call to steady progress in three steps."
         />
 
-        <ol className="relative mt-14 grid gap-6 md:grid-cols-3">
+        <ol className="relative mt-14 grid gap-6 lg:grid-cols-3">
           <span
             aria-hidden="true"
-            className="absolute top-12 right-[16%] left-[16%] hidden border-t-2 border-dashed border-navy/15 md:block"
+            className="absolute top-12 right-[16%] left-[16%] hidden border-t-2 border-dashed border-navy/15 lg:block"
           />
           {steps.map((step, i) => (
             <li key={step.title}>

@@ -91,7 +91,7 @@ export function Consult({ program, onProgramChange }: ConsultProps) {
             title="Let’s talk about your goals."
             intro="Tell me a little about where you are now. I’ll reply within 1 business day to set up your free consult."
           />
-          <ul className="mt-8 grid gap-4">
+          <ul className="mt-8 mb-10 grid gap-4">
             {nextSteps.map((item) => (
               <li key={item} className="flex gap-3 text-on-navy">
                 <CheckCircle2 aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-lime" />
@@ -99,12 +99,12 @@ export function Consult({ program, onProgramChange }: ConsultProps) {
               </li>
             ))}
           </ul>
-          <div className="mt-auto grid gap-3 border-t border-white/10 pt-8 text-on-navy max-lg:mt-10">
+          <div className="mt-auto grid gap-3 border-t border-white/10 pt-8 text-on-navy">
             <a href={site.contact.phoneHref} className="flex items-center gap-3 hover:text-white">
               <Phone aria-hidden="true" className="size-5 text-lime" />
               {site.contact.phoneDisplay}
             </a>
-            <a href={`mailto:${site.contact.email}`} className="flex items-center gap-3 break-all hover:text-white">
+            <a href={`mailto:${site.contact.email}`} className="flex items-center gap-3 wrap-anywhere hover:text-white">
               <Mail aria-hidden="true" className="size-5 shrink-0 text-lime" />
               {site.contact.email}
             </a>
